@@ -1,0 +1,88 @@
+<!-- main -->
+    <main>
+      <div class="hero">
+        <div class="main-content">
+          <div class="body1-content">
+            <!-- left-body1-content -->
+            <div class="left-body1">
+              <img
+                src="./assets/img/hero-img.jpg"
+                alt="Learn without limits and spread knowledge."
+                class="body1-img"
+              />
+              <div class="body1-icon-box">
+                <!-- item1 -->
+                <div class="item item1">
+                  <div class="img-of-item icon1">
+                    <img
+                      src="./assets/icon/Orion_page.1STyellow.svg"
+                      alt="Design courses"
+                      class="inbox1-icon"
+                    />
+                  </div>
+                  <div class="infor">
+                    <p class="label">20 Courses</p>
+                    <p class="title">UI/UX Design</p>
+                  </div>
+                </div>
+                <!-- item2 -->
+                <div class="item item2">
+                  <div class="img-of-item icon2">
+                    <img
+                      src="./assets/icon/Orion_code-window.2ndpurple.svg"
+                      alt="Development courses"
+                      class="inbox2-icon"
+                    />
+                  </div>
+                  <div class="infor">
+                    <p class="label">20 Courses</p>
+                    <p class="title">Development</p>
+                  </div>
+                </div>
+                <!-- item3 -->
+                <div class="item item3">
+                  <div class="img-of-item icon3">
+                    <img
+                      src="./assets/icon/Orion_megaphone.3rd.svg"
+                      alt="Marketing"
+                      class="inbox3-icon"
+                    />
+                  </div>
+                  <div class="infor">
+                    <p class="label">30 Courses</p>
+                    <p class="title">Marketing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right-body1-content -->
+            <div class="right-body1">
+              <h1 class="title-h1">
+                Learn without limits and spread knowledge.
+              </h1>
+              <p class="desc">
+                Build new skills for that “this is my year” feeling with
+                courses, certificates, and degrees from world-class universities
+                and companies.
+              </p>
+              <div class="cta-group">
+                <a class="btn btn-see-courses" href="#!">See Courses</a>
+                <button class="play-vid btn">
+                  <div class="icon">
+                    <img
+                      src="./assets/icon/playIconBody1.svg"
+                      alt="Watch courses via playing this button"
+                    />
+                  </div>
+                  <span>Watch Video</span>
+                </button>
+              </div>
+              <p class="desc">Recent engagement</p>
+              <p class="desc">
+                <strong>50K</strong> Students <strong>70+</strong> Courses
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
