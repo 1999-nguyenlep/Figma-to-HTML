@@ -1,0 +1,74 @@
+/* ---------------------------------------------Feedback----------------------------------- */
+.comment {
+  margin-top: 135px;
+  background-color: #2e2100;
+  padding: 96px 0;
+  /* chỉ cần dòng này thôi là tạo được chiều cao của khối mà không cần giới hạn độ cao box rồi */
+}
+.comment .feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+.comment .content {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  transform: translateX(-200%);
+  justify-content: space-between;
+}
+/* ------------------------------------------Left content------------------------------------ */
+
+.comment .left-content img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.comment .left-content .name-commentor {
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 34px; /* 141.667% */
+  margin-top: 18px;
+}
+.comment .left-content p {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 26px; /* 185.714% */
+  margin-top: 4px;
+}
+.comment .left-content .circles {
+  display: flex;
+  gap: 6px;
+  margin-top: 28px;
+}
+.comment .left-content .comment-buttons {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+  cursor: pointer;
+}
+/* .comment .left-content .comment-buttons:hover {
+  background-color: var(--primary-bgc);
+  transform: scale(1.5);
+} */
+.comment .left-content .circles .active {
+  background-color: var(--primary-bgc);
+  cursor: default;
+}
+/* ------------------------------------------Right content------------------------------------ */
+.comment .right-content {
+  /* position: relative; */
+  width: 66%;
+  margin-left: auto;
+}
+.comment .right-content .p-right-comment {
+  /* margin-top: 28px; */
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 40px; /* 153.846% */
+  max-width: 740px;
+}

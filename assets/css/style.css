@@ -10,10 +10,11 @@ html {
 }
 /* Khôi phục lại cỡ chữ mặc định theo rem */
 body {
+  /* chọn cỡ chữ chiếm nhiều nhất trong websize */
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-/*===============common===============*/
+/*==========================================common======================================*/
 .heading-lv2 {
   color: #171100;
   font-family: var(--font-heading);
@@ -46,10 +47,25 @@ a {
   font-weight: 600;
   border-radius: 999px;
   background: #171100;
-  /* Add this line by ai */
+  cursor: pointer;
 }
 .btn:hover {
   opacity: 0.9;
+}
+/* dòng này giúp xuống hàng, giữ đúng chiều rộng */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* dòng này giúp xuống hàng sau 2 lines, giữ đúng chiều rộng */
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+/* dòng này giúp nó phải cắt, xún hàng những từ k có dấu cách, phải xún hàng */
+.break-all {
+  word-break: break-all;
 }
 /*===============header===============*/
 .header {
@@ -171,7 +187,7 @@ a {
   font-size: 1.4rem;
   line-height: 1.86; /* 185.714% */
 }
-.body1-icon-box .title {
+.title {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
@@ -296,4 +312,78 @@ a {
   cursor: pointer;
   background-color: orange;
   color: white;
+}
+.popular-body2 .course-list {
+  display: flex;
+  gap: 30px;
+  /* nếu đặt margin là 55 thì nó cách 4 cạnh cha là 55px và làm cho khối course-list nhỏ lại */
+  margin-top: 55px;
+}
+.popular-body2 .course-items {
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid grey;
+  flex: 1;
+}
+/* Khoảng trống này dùng để đặt .course-items:hover */
+.popular-body2 .course-items:hover {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+}
+
+.popular-body2 .course-list .thumb {
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+  height: 278px;
+}
+.popular-body2 .course-items .infor {
+  width: 326px;
+  /* height: 150px; */
+  /* không đặt độ lớn để khi nó có thêm phần tử thêm chữ nó có thể dãn ra */
+  padding: 16px 22px 22px;
+  /* flex-shrink: 0; */
+}
+.popular-body2 .course-items .rating,
+.popular-body2 .course-items .foot,
+.popular-body2 .course-items .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* tạo thẻ a để sau này khách hàng có vùng tương tác điều hướng tới khóa học một cách rộng hơn */
+.popular-body2 .course-items .title a {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+.popular-body2 .course-items .rating .value {
+  color: #fea31b;
+  font-size: 1.6rem;
+  line-height: 28px; /* 175% */
+  margin-left: 6px;
+}
+.popular-body2 .course-items .desc {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 26px; /* 185.714% */
+  margin-top: 6px;
+}
+.popular-body2 .course-items .foot {
+  margin-top: 12px;
+}
+.popular-body2 .course-items .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px; /* 166.667% */
+}
+.popular-body2 .course-items .btn-book {
+  border: none;
+}
+.popular-body2 .course-items .btn-book:hover {
+  background: var(--primary-bgc);
 }
