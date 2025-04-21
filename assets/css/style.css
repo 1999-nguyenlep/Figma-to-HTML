@@ -275,10 +275,12 @@ a {
 .right-body1 strong:nth-child(2) {
   margin-left: 28px;
 }
+/* -------------------------------------------POPULAR------------------------------------------ */
 .popular-body2 {
   padding: 65px 0;
   margin: 135px 0;
 }
+/* ----------------------------------------Top Popular---------------------------------------- */
 .body2-top-content {
   display: flex;
   justify-content: space-between;
@@ -313,6 +315,7 @@ a {
   background-color: orange;
   color: white;
 }
+/* ----------------------------------------Bottom Popular---------------------------------------- */
 .popular-body2 .course-list {
   display: flex;
   gap: 30px;
@@ -324,6 +327,7 @@ a {
   background: #fff;
   border: 1px solid grey;
   flex: 1;
+  justify-content: space-between;
 }
 /* Khoảng trống này dùng để đặt .course-items:hover */
 .popular-body2 .course-items:hover {
@@ -340,7 +344,7 @@ a {
   height: 278px;
 }
 .popular-body2 .course-items .infor {
-  width: 326px;
+  /* width: 326px; */
   /* height: 150px; */
   /* không đặt độ lớn để khi nó có thêm phần tử thêm chữ nó có thể dãn ra */
   padding: 16px 22px 22px;
@@ -387,7 +391,7 @@ a {
 .popular-body2 .course-items .btn-book:hover {
   background: var(--primary-bgc);
 }
-/* ---------------------------------------------Feedback----------------------------------- */
+/* ---------------------------------------------FEEDBACKS----------------------------------- */
 .comment {
   margin-top: 135px;
   background-color: #2e2100;
@@ -458,4 +462,39 @@ a {
   font-style: italic;
   line-height: 40px; /* 153.846% */
   max-width: 740px;
+}
+/* ------------------------------------------promo-platform----------------------------------- */
+.promo-platContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 135px;
+  padding: 65px 0px;
+  justify-content: space-between;
+}
+.promo-platContainer .right-platContainer {
+  width: 41%;
+}
+.plat-imgs {
+  display: flex;
+  gap: 30px;
+}
+.promo-platContainer img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.plat-img1 {
+  margin-top: 34px;
+}
+.right-platContainer p {
+  color: #5f5b53;
+  margin-bottom: 16px;
+  line-height: 1.75;
+}
+.right-platContainer .btn {
+  margin-top: 32px;
+  width: 137px;
+  border: none;
+  background-color: var(--primary-bgc);
 }
