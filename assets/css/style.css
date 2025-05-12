@@ -406,6 +406,8 @@ a {
   width: 100%;
   display: flex;
   flex-shrink: 0;
+  transform: translateX(-100%);
+  transition: all ease 0.5s;
 }
 /* ------------------------------------------Left content------------------------------------ */
 
@@ -492,9 +494,33 @@ a {
   margin-bottom: 16px;
   line-height: 1.75;
 }
-.right-platContainer .btn {
+.right-platContainer .btn,
+.leftPlatform2 .btn {
   margin-top: 32px;
   width: 137px;
   border: none;
   background-color: var(--primary-bgc);
+}
+/* left block of platform 2 */
+.platformContainer2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+.leftPlatform2 {
+  width: 570px;
+}
+.leftPlatform2 .heading-lv2 {
+  margin: 71px 0 16px 0;
+}
+.leftPlatform2 .desc {
+  margin-top: 32px;
+}
+/* right block of platform 2 */
+.rightPlatform2 img {
+  width: 470px;
+  height: 440px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  object-fit: cover;
 }
